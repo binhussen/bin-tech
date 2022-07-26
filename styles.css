@@ -200,7 +200,19 @@ li {
 
 	.nav-menu {
 		display: flex;
-		gap: 1rem;
+		gap: 3rem;
+		font-size: 1.2rem;
+		align-items: center;
+	}
+
+	.nav-menu li:hover {
+		color: var(--primary-color);
+	}
+
+	.active {
+		padding: 0.3rem 1rem;
+		color: var(--primary-color);
+		border: 0.3rem solid var(--primary-color);
 	}
 
 	.header {
@@ -210,7 +222,7 @@ li {
 	}
 
 	.main {
-		padding: 12rem 0;
+		padding: 12rem 0 0;
 	}
 
 	.headline {
@@ -300,5 +312,17 @@ li {
 	}
 	.company {
 		width: 12rem;
+	}
+
+	.footer {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 3rem 0;
+		gap: 3rem;
+	}
+
+	.footer-content {
+		font-size: 1.2rem;
 	}
 }
