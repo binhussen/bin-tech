@@ -1,1 +1,89 @@
 /** @format */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	line-height: 1.5;
+}
+
+:root {
+	--primary-color: #eb5746;
+	--secondary-color: #292c33;
+	--white-color: #fff;
+	--bg-color: #fafafa;
+	--dark-bg: #1c1d20;
+}
+
+body {
+	font-family: Lato, serif;
+	background: var(--bg-color);
+}
+
+li {
+	list-style-type: none;
+}
+
+.hamburger {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	position: absolute;
+	background-color: transparent;
+	border: none;
+	top: 1.5rem;
+	left: 1.5rem;
+	transform: translateY(-50%);
+	z-index: 1;
+}
+
+.bar {
+	width: 1.5rem;
+	border: 2px solid var(--secondary-color);
+	transition: 0.6s ease;
+}
+
+.headline {
+	padding: 5rem 1rem;
+	background: url("./assets/bg/background.png") no-repeat;
+	background-size: 100% 75vh;
+}
+
+.headline-motto {
+	color: var(--primary-color);
+	font-size: 1rem;
+}
+
+.headline-title {
+	color: var(--primary-color);
+	font-size: 2rem;
+	line-height: 1;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+
+.headline-content {
+	border: 1px solid var(--white-color);
+	padding: 1rem;
+	margin: 2rem 0;
+	background: var(--bg-color);
+}
+
+.headline-skill {
+	font-size: 1.2rem;
+}
+
+.tags {
+	list-style-type: none;
+	display: flex;
+	margin: 0.75rem 0;
+	gap: 0.5rem;
+}
+
+.tag {
+	font-size: 1rem;
+	color: var(--primary-color);
+	padding: 0.5rem;
+	border: 0.06rem solid var(--white-color);
+}
