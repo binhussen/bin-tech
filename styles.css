@@ -285,4 +285,20 @@ li {
 	.btn {
 		display: none;
 	}
+
+	.client {
+		background: var(--dark-bg);
+		color: var(--white-color);
+		padding: 3rem 0;
+	}
+
+	.companies {
+		display: flex;
+		gap: 2.4rem;
+		justify-content: center;
+		align-items: center;
+	}
+	.company {
+		width: 12rem;
+	}
 }
