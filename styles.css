@@ -25,11 +25,29 @@ li {
 	list-style-type: none;
 }
 
+.top-nav {
+	background: var(--dark-bg);
+	color: var(--white-color);
+}
+.social-icon {
+	display: flex;
+	justify-content: flex-end;
+	list-style-type: none;
+	align-items: center;
+	gap: 1.5rem;
+}
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 5rem;
+}
+
 .hamburger {
 	display: flex;
 	flex-direction: column;
 	gap: 4px;
-	position: absolute;
+	position: fixed;
 	background-color: transparent;
 	border: none;
 	top: 1.5rem;
@@ -43,11 +61,13 @@ li {
 	border: 2px solid var(--secondary-color);
 	transition: 0.6s ease;
 }
+.main {
+	background: url("./assets/bg/background.png") no-repeat;
+	background-size: 100% 75vh;
+}
 
 .headline {
 	padding: 5rem 1rem 1rem;
-	background: url("./assets/bg/background.png") no-repeat;
-	background-size: 100% 75vh;
 }
 
 .headline-motto {
@@ -165,4 +185,104 @@ li {
 
 .more {
 	width: 1rem;
+}
+
+@media (max-width: 768px) {
+	.desktop {
+		display: none;
+	}
+}
+
+@media (min-width: 768px) {
+	.mobile {
+		display: none;
+	}
+
+	.nav-menu {
+		display: flex;
+		gap: 1rem;
+	}
+
+	.header {
+		position: fixed;
+		width: 100%;
+		background: var(--white-color);
+	}
+
+	.main {
+		padding: 12rem 0;
+	}
+
+	.headline {
+		padding: 10rem 0;
+	}
+
+	.container {
+		max-width: 100rem;
+		padding: 0.25rem 3rem;
+		margin: 0 auto;
+	}
+	.main {
+		background: url("./assets/bg/bkgrnd.png") no-repeat;
+		background-size: 100%;
+	}
+	.headline-motto {
+		font-size: 2rem;
+		line-height: 2;
+	}
+
+	.headline-title {
+		font-size: 5rem;
+		width: 65%;
+	}
+
+	.headline-content {
+		font-size: 1.5rem;
+		width: 60%;
+	}
+
+	.main-program {
+		padding: 3rem 0;
+	}
+
+	.cards {
+		display: flex;
+		padding: 1rem 0;
+	}
+
+	.card {
+		flex-direction: column;
+		gap: 1rem;
+		justify-items: center;
+		padding: 1rem;
+		margin: 0.25rem;
+	}
+
+	.card-content {
+		font-size: 1.1rem;
+		text-align: center;
+	}
+
+	.feature {
+		padding: 3rem 1rem;
+	}
+
+	.feature-cards {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 2rem;
+	}
+
+	.feture-name {
+		font-size: 1.5rem;
+	}
+
+	.people-img {
+		width: 9rem;
+		height: 9rem;
+	}
+
+	.btn {
+		display: none;
+	}
 }
