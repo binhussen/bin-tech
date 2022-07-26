@@ -45,7 +45,7 @@ li {
 }
 
 .headline {
-	padding: 5rem 1rem;
+	padding: 5rem 1rem 1rem;
 	background: url("./assets/bg/background.png") no-repeat;
 	background-size: 100% 75vh;
 }
@@ -86,4 +86,40 @@ li {
 	color: var(--primary-color);
 	padding: 0.5rem;
 	border: 0.06rem solid var(--white-color);
+}
+.main-program {
+	background: var(--dark-bg);
+	color: var(--white-color);
+}
+
+.program-title {
+	text-align: center;
+}
+
+.card {
+	margin: 1rem;
+	padding: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	background-color: rgba(90, 90, 90, 0.25);
+}
+
+.card-img {
+	width: 3rem;
+	height: 3rem;
+}
+
+.card-title {
+	color: var(--primary-color);
+}
+
+.card-content {
+	font-size: 0.75rem;
+}
+
+.vector {
+	display: block;
+	margin: 5px auto;
 }
