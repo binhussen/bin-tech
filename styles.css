@@ -214,6 +214,7 @@ a {
 
 .align-center {
 	text-align: center;
+	margin: 0 auto;
 	display: block;
 }
 
@@ -228,7 +229,6 @@ a {
 
 .recent-list {
 	margin: 1.5rem 0;
-	display: grid;
 }
 
 .work {
@@ -384,5 +384,29 @@ a {
 	.footer {
 		padding: 3rem 0;
 		gap: 3rem;
+	}
+
+	.about-bg {
+		background: url("./assets/bg/about-dektop.png") no-repeat;
+		background-size: 100%;
+	}
+
+	.about-content {
+		background: var(--white-color);
+		margin: 2rem auto;
+	}
+
+	.pro-content {
+		width: 50%;
+		padding: 1rem;
+	}
+
+	.recent-list {
+		display: flex;
+		justify-content: center;
+	}
+
+	.work {
+		margin: 0.5rem;
 	}
 }
