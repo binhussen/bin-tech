@@ -140,6 +140,17 @@ document.addEventListener("DOMContentLoaded", () => {
 	});
 
 	lectures.forEach((pro, i) => {
-		showLectures(i);
+		if (i < 2) {
+			showLectures(i);
+		}
 	});
+});
+
+more.addEventListener("click", () => {
+	lectures.forEach((pro, i) => {
+		if (i >= 2) {
+			showLectures(i);
+		}
+	});
+	more.classList.toggle("hidden");
 });
