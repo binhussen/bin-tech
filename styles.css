@@ -30,6 +30,10 @@ a {
 	color: inherit;
 }
 
+.logo {
+	width: 15vw;
+}
+
 .hamburger {
 	display: flex;
 	flex-direction: column;
@@ -95,6 +99,7 @@ a {
 	padding: 0.5rem;
 	border: 0.06rem solid var(--white-color);
 }
+
 .main-program {
 	background: var(--dark-bg);
 	color: var(--white-color);
@@ -148,6 +153,7 @@ a {
 .feature-img {
 	position: relative;
 }
+
 .people-img {
 	width: 6rem;
 	height: 6rem;
@@ -189,6 +195,7 @@ a {
 	align-items: center;
 	flex-wrap: wrap;
 }
+
 .company {
 	width: 8rem;
 }
@@ -205,14 +212,6 @@ a {
 	font-size: 1.2rem;
 }
 
-/* .title {
-	background: url(../imgs/red-bg.jpg);
-	background-size: cover;
-	background-attachment: fixed;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-} */
-
 .align-center {
 	text-align: center;
 	margin: 0 auto;
@@ -225,7 +224,14 @@ a {
 }
 
 .main-logo {
+	margin: 2rem;
 	padding: 2rem;
+	width: 50vw;
+	border: 1px solid #d3d3d3;
+}
+
+.footer-logo {
+	width: 30vw;
 }
 
 .recent-list {
@@ -243,11 +249,13 @@ a {
 	flex-direction: column;
 	justify-content: center;
 }
+
 .recent-1 {
 	background: linear-gradient(to right, #f04a38c0, #f04a38c0),
 		url(./assets/bg/recent-1.jpg) no-repeat;
 	background-size: cover;
 }
+
 .recent-2 {
 	background: linear-gradient(to right, #f04a38c0, #f04a38c0),
 		url(./assets/bg/recent-2.jpg) no-repeat;
@@ -262,6 +270,7 @@ a {
 	.desktop {
 		display: none;
 	}
+
 	.nav-menu {
 		position: fixed;
 		flex-direction: column;
@@ -322,6 +331,7 @@ a {
 		background: var(--dark-bg);
 		color: var(--white-color);
 	}
+
 	.social-icon {
 		display: flex;
 		justify-content: flex-end;
@@ -329,12 +339,14 @@ a {
 		align-items: center;
 		gap: 1.5rem;
 	}
+
 	.nav {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		height: 5rem;
 	}
+
 	.nav-menu {
 		display: flex;
 		gap: 3rem;
@@ -359,6 +371,8 @@ a {
 	}
 
 	.main {
+		background: url("./assets/bg/bkgrnd.png") no-repeat;
+		background-size: 100%;
 		padding: 12rem 0 0;
 	}
 
@@ -371,10 +385,7 @@ a {
 		padding: 0.25rem 3rem;
 		margin: 0 auto;
 	}
-	.main {
-		background: url("./assets/bg/bkgrnd.png") no-repeat;
-		background-size: 100%;
-	}
+
 	.headline-motto {
 		font-size: 2rem;
 		line-height: 2;
