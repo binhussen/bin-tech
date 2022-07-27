@@ -48,6 +48,7 @@ a {
 	border: 2px solid var(--secondary-color);
 	transition: 0.6s ease;
 }
+
 .main {
 	background: url("./assets/bg/background.png") no-repeat;
 	background-size: 100% 75vh;
@@ -285,6 +286,10 @@ a {
 
 	.hamburger.active {
 		left: 16rem;
+	}
+
+	.nav-menu.active .select {
+		color: var(--primary-color);
 	}
 
 	.hamburger.active .bar {

@@ -3,6 +3,7 @@
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 const navItem = document.querySelectorAll(".nav-item");
+const select = document.querySelector(".select");
 
 const openMenu = () => {
 	navMenu.classList.remove("desktop");
@@ -21,7 +22,7 @@ hamburger.addEventListener("click", () => {
 });
 
 navItem.forEach((n) => {
-	n.addEventListener("click", () => {
+	n.addEventListener("click", (n) => {
 		closeMenu();
 	});
 });
