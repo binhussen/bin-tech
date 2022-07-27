@@ -6,6 +6,7 @@ const navItem = document.querySelectorAll(".nav-item");
 const select = document.querySelector(".select");
 const more = document.querySelector(".btn-more");
 const cards = document.querySelector(".cards");
+const feature = document.querySelector(".feature-cards");
 
 const openMenu = () => {
 	navMenu.classList.remove("desktop");
@@ -68,6 +69,37 @@ const technologies = [
 	},
 ];
 
+const lectures = [
+	{
+		title: "Backend Lecture",
+		name: "Mohammed Hussen",
+		image: "./assets/icon/icon-binhussen.jpg",
+		content:
+			"Experienced Software Engineer with a demonstrated history of working in Full-stack Web development.",
+	},
+	{
+		title: "senior Lecture",
+		name: "Abdul Mejid",
+		image: "./assets/icon/icon-binhussen.jpg",
+		content:
+			"Experienced Software Engineer with a demonstrated history of working in Full-stack Web development.",
+	},
+	{
+		title: "Network Lecture",
+		name: "osman waqo",
+		image: "./assets/icon/icon-binhussen.jpg",
+		content:
+			"Experienced Software Engineer with a demonstrated history of working in Full-stack Web development.",
+	},
+	{
+		title: "Full Stack Lecture",
+		name: "Yesuf fetna",
+		image: "./assets/icon/icon-binhussen.jpg",
+		content:
+			"Experienced Software Engineer with a demonstrated history of working in Full-stack Web development.",
+	},
+];
+
 const showCards = (i) => {
 	cards.innerHTML += `<article class="card">
 						<img class="card-img" src=${technologies[i].image} alt="" />
@@ -77,8 +109,37 @@ const showCards = (i) => {
 					</article>`;
 };
 
+const showLectures = (i) => {
+	feature.innerHTML += `<article class="feature-card">
+						<div class="feature-img">
+							<img
+								src="./assets/bg/checkerboard-squares-black-white.jpg"
+								alt="background"
+								class="bg-people"
+							/>
+							<img
+								class="people-img"
+								src=${lectures[i].image}
+								alt="binhussen image"
+							/>
+						</div>
+
+						<div>
+							<h3 class="feture-name">${lectures[i].name}</h3>
+							<h5 class="card-title">${lectures[i].title}</h5>
+							<p class="card-content">
+								${lectures[i].content}
+							</p>
+						</div>
+					</article>`;
+};
+
 document.addEventListener("DOMContentLoaded", () => {
 	technologies.forEach((pro, i) => {
 		showCards(i);
+	});
+
+	lectures.forEach((pro, i) => {
+		showLectures(i);
 	});
 });
