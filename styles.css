@@ -6,6 +6,7 @@
 	padding: 0;
 	box-sizing: border-box;
 	line-height: 1.5;
+	font-family: "Lato", sans-serif;
 }
 
 :root {
@@ -13,11 +14,10 @@
 	--secondary-color: #292c33;
 	--white-color: #fff;
 	--bg-color: #fafafa;
-	--dark-bg: #1c1d20;
+	--dark-bg: #2e2e2e;
 }
 
 body {
-	font-family: Lato, serif;
 	background: var(--bg-color);
 }
 
@@ -25,22 +25,9 @@ li {
 	list-style-type: none;
 }
 
-.top-nav {
-	background: var(--dark-bg);
-	color: var(--white-color);
-}
-.social-icon {
-	display: flex;
-	justify-content: flex-end;
-	list-style-type: none;
-	align-items: center;
-	gap: 1.5rem;
-}
-.nav {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	height: 5rem;
+a {
+	text-decoration: none;
+	color: inherit;
 }
 
 .hamburger {
@@ -187,6 +174,85 @@ li {
 	width: 1rem;
 }
 
+.client {
+	background: var(--dark-bg);
+	color: var(--white-color);
+	padding: 3rem 0;
+}
+
+.companies {
+	display: flex;
+	gap: 2rem;
+	padding: 2rem;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.company {
+	width: 8rem;
+}
+
+.footer {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 3rem 1rem;
+	gap: 1rem;
+}
+
+.footer-content {
+	font-size: 1.2rem;
+}
+
+/* .title {
+	background: url(../imgs/red-bg.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+} */
+
+.align-center {
+	text-align: center;
+	display: block;
+}
+
+.promotion {
+	background: var(--white-color);
+	padding: 1rem;
+}
+
+.main-logo {
+	padding: 2rem;
+}
+
+.recent-list {
+	margin: 1.5rem 0;
+	display: grid;
+}
+
+.work {
+	width: 20rem;
+	height: 15rem;
+	margin: 0.5rem auto;
+	color: var(--white-color);
+	text-align: center;
+	font-size: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.recent-1 {
+	background: linear-gradient(to right, #f04a38c0, #f04a38c0),
+		url(./assets/bg/recent-1.jpg) no-repeat;
+	background-size: cover;
+}
+.recent-2 {
+	background: linear-gradient(to right, #f04a38c0, #f04a38c0),
+		url(./assets/bg/recent-2.jpg) no-repeat;
+	background-size: cover;
+}
+
 @media (max-width: 768px) {
 	.desktop {
 		display: none;
@@ -198,6 +264,23 @@ li {
 		display: none;
 	}
 
+	.top-nav {
+		background: var(--dark-bg);
+		color: var(--white-color);
+	}
+	.social-icon {
+		display: flex;
+		justify-content: flex-end;
+		list-style-type: none;
+		align-items: center;
+		gap: 1.5rem;
+	}
+	.nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 5rem;
+	}
 	.nav-menu {
 		display: flex;
 		gap: 3rem;
@@ -244,7 +327,7 @@ li {
 	}
 
 	.headline-title {
-		font-size: 5rem;
+		font-size: 4rem;
 		width: 65%;
 	}
 
@@ -298,31 +381,8 @@ li {
 		display: none;
 	}
 
-	.client {
-		background: var(--dark-bg);
-		color: var(--white-color);
-		padding: 3rem 0;
-	}
-
-	.companies {
-		display: flex;
-		gap: 2.4rem;
-		justify-content: center;
-		align-items: center;
-	}
-	.company {
-		width: 12rem;
-	}
-
 	.footer {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		margin: 3rem 0;
+		padding: 3rem 0;
 		gap: 3rem;
-	}
-
-	.footer-content {
-		font-size: 1.2rem;
 	}
 }
