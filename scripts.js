@@ -37,10 +37,9 @@ document.addEventListener('keydown', (e) => {
 
 const technologies = [
   {
-    title: 'Web Development',
+    title: 'Web Dev',
     image: './assets/icon/icon-web.png',
-    content:
-      'Bin Tech is a nationwide innovation inclusive environment designed to ensure students.',
+    content: 'Bin Tech is a nationwide innovation inclusive environment.',
   },
   {
     title: 'Mobile App',
@@ -97,6 +96,20 @@ const lectures = [
     content:
       'Experienced Software Engineer with a demonstrated history of working in Full-stack Web development.',
   },
+  {
+    title: 'Full Stack Lecture',
+    name: 'Yesuf fetna',
+    image: './assets/icon/icon-binhussen.jpg',
+    content:
+      'Experienced Software Engineer with a demonstrated history of working in Full-stack Web development.',
+  },
+  {
+    title: 'Full Stack Lecture',
+    name: 'Yesuf fetna',
+    image: './assets/icon/icon-binhussen.jpg',
+    content:
+      'Experienced Software Engineer with a demonstrated history of working in Full-stack Web development.',
+  },
 ];
 
 const showCards = (i) => {
@@ -137,7 +150,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   lectures.forEach((pro, i) => {
-    if (i < 2) {
+    if (i < 2 || window.innerWidth > 768) {
       showLectures(i);
     }
   });

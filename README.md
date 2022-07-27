@@ -2,6 +2,7 @@
 
 Bin-Tech is a nationwide innovation competition,
 Bin-tech has been guiding young Ethiopians into the realm of tech entrepreneurship by providing technical and theoretical training courses on Software Development.
+
 ## Built With
 
 - HTML
@@ -10,7 +11,8 @@ Bin-tech has been guiding young Ethiopians into the realm of tech entrepreneursh
 
 ## Live Demo
 
-[View Demo](https://binhussen.github.io/bin-tech/)
+- You can get live version[here](https://binhussen.github.io/bin-tech/)
+- You can get a short presentation about the entire project [here](https://www.loom.com/share/784aaed7a417429ab22ebc81f207acec)
 
 ## Getting Started
 
@@ -50,6 +52,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Microverse Curriculum
+- [Cindy Shin](https://www.behance.net/adagio07) for this [CC-Global-Summit design](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)
 
 ## 📝 License
 
