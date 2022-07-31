@@ -11,8 +11,7 @@ Bin-tech has been guiding young Ethiopians into the realm of tech entrepreneursh
 
 ## Live Demo
 
-- You can get live version[here](https://binhussen.github.io/bin-tech/)
-- You can get a short presentation about the entire project [here](https://www.loom.com/share/784aaed7a417429ab22ebc81f207acec)
+You can get live version [here](https://binhussen.github.io/bin-tech/)
 
 ## Getting Started
 
